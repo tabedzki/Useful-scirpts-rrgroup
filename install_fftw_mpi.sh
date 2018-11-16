@@ -42,8 +42,8 @@ fi
 echo "Configuring:"
 echo "$command_str"
 $command_str
-make
-make install
+make -j
+make install -j
 
 # Show what was just installed
 # tree "$install_dir"

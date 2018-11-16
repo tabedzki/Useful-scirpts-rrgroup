@@ -46,7 +46,7 @@ make
 make install
 
 # Show what was just installed
-tree "$install_dir"
+# tree "$install_dir"
 
 # Output should look like this for MPI:
 # <install_dir>

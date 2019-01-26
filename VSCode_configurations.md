@@ -88,7 +88,9 @@ While I would normally suggest debugging using the [Native Debug
 extension](https://github.com/WebFreak001/code-debug), it does not support WSL
 and so we will use [Microsoft's C/C++
 extension](https://github.com/Microsoft/vscode-cpptools). Below are the
-configurations.  
+configurations.  A note of warning, you will need to compile the program in WSL
+itself in order to debug the following manner. I typically compile in command
+line using makefile via the terminal that comes with VSCode.
 
 You will have to make some changes to the specific paths, most notably where your WSL files are located (in the sourceFileMap).
 You will also need to have explicit paths to the executable that you wish to debug.

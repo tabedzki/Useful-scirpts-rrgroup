@@ -45,9 +45,9 @@ $command_str
 make -j
 make install -j
 
-if [[ $shell =~ "zsh" ]]; then echo "FFTWHOME=$install_dir" >> ~/.zshrc; fi 
+if [[ $shell =~ "zsh" ]]; then echo "FFTWHOME=$install_dir" >> $HOME/.zshrc; fi 
 
-if [[ $shell =~ "bash" ]]; then echo "FFTWHOME=$install_dir" >> ~/.bashrc; fi 
+if [[ $shell =~ "bash" ]]; then echo "FFTWHOME=$install_dir" >> $HOME/.bashrc; fi 
 
 # Show what was just installed
 # tree "$install_dir"
